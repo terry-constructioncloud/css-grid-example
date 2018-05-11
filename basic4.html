@@ -1,0 +1,43 @@
+<html>
+<head>
+    <style>
+        .wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            /*grid-gap: 1rem;*/
+
+        }
+
+        .wrapper > div {
+            background: #eee;
+            padding: 1rem;
+        }
+
+        .wrapper > div:nth-child(odd) {
+            background: #ddd;
+        }
+
+        .div1 {
+            grid-column: 2/4;
+            text-align: center;
+        }
+
+        .div2 {
+            text-align: right;
+        }
+
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <div class="div1">
+        <button> button1</button>
+        <button> button2</button>
+        <button> button3</button>
+    </div>
+    <div class="div2">
+        <button>button 4</button>
+    </div>
+</div>
+</body>
+</html>
